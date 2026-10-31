@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - StudyMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="app">
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">📚 StudyMate</div>
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html" class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="planner.html">
+                📅 Study Planner
+            </a>
+
+            <a href="tasks.html">
+                ✅ Tasks
+            </a>
+
+            <a href="progress.html">
+                📊 Progress
+            </a>
+
+        </nav>
+
+        <button id="logoutBtn" class="logout">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="mobile-header">
+            <div class="logo">📚 StudyMate</div>
+        </div>
+
+        <div class="page-header">
+
+            <div>
+
+                <p class="eyebrow">STUDENT DASHBOARD</p>
+
+                <h1>
+                    Hello, <span id="studentName">Student</span> 👋
+                </h1>
+
+                <p id="todayText" class="muted"></p>
+
+            </div>
+
+            <a href="planner.html" class="btn primary">
+                + Add Study Plan
+            </a>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📝</div>
+                <span>Total Tasks</span>
+                <strong id="totalTasks">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <span>Pending Tasks</span>
+                <strong id="pendingTasks">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <span>Completed</span>
+                <strong id="completedTasks">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <span>Progress</span>
+                <strong id="dashboardProgress">0%</strong>
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <section class="content-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>Today's Tasks</h2>
+                        <p class="muted">Tasks scheduled for today.</p>
+                    </div>
+
+                    <a href="tasks.html">View All</a>
+
+                </div>
+
+                <div id="todayTasks"></div>
+
+            </section>
+
+            <section class="content-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>Upcoming Study Plans</h2>
+                        <p class="muted">Your next study sessions.</p>
+                    </div>
+
+                    <a href="planner.html">View All</a>
+
+                </div>
+
+                <div id="upcomingPlans"></div>
+
+            </section>
+
+        </div>
+
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-grid">
+
+                <a href="tasks.html" class="quick-card">
+                    <span>➕</span>
+                    <div>
+                        <strong>Add Task</strong>
+                        <small>Create a new assignment or task.</small>
+                    </div>
+                </a>
+
+                <a href="planner.html" class="quick-card">
+                    <span>📅</span>
+                    <div>
+                        <strong>Plan Study</strong>
+                        <small>Schedule your next study session.</small>
+                    </div>
+                </a>
+
+                <a href="progress.html" class="quick-card">
+                    <span>📊</span>
+                    <div>
+                        <strong>View Progress</strong>
+                        <small>Check your study performance.</small>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

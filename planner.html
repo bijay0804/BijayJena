@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Study Planner - StudyMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="app">
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">📚 StudyMate</div>
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+
+            <a href="planner.html" class="active">
+                📅 Study Planner
+            </a>
+
+            <a href="tasks.html">✅ Tasks</a>
+
+            <a href="progress.html">📊 Progress</a>
+
+        </nav>
+
+        <button id="logoutBtn" class="logout">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <div>
+
+                <p class="eyebrow">STUDY PLANNER</p>
+
+                <h1>Create Your Study Plan 📅</h1>
+
+                <p class="muted">
+                    Schedule your subjects and study sessions.
+                </p>
+
+            </div>
+
+        </div>
+
+        <section class="form-card">
+
+            <h2>Add Study Session</h2>
+
+            <form id="planForm" class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Subject</label>
+
+                    <input
+                        type="text"
+                        id="planSubject"
+                        placeholder="e.g. CSE-326"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Topic</label>
+
+                    <input
+                        type="text"
+                        id="planTopic"
+                        placeholder="e.g. HTML Forms"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Date</label>
+
+                    <input
+                        type="date"
+                        id="planDate"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Priority</label>
+
+                    <select id="planPriority">
+
+                        <option value="High">High</option>
+
+                        <option value="Medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="Low">Low</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Start Time</label>
+
+                    <input
+                        type="time"
+                        id="planStart"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>End Time</label>
+
+                    <input
+                        type="time"
+                        id="planEnd"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-actions">
+
+                    <button type="submit" class="btn primary">
+                        + Add Study Plan
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="content-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <h2>Your Study Plans</h2>
+
+                    <p class="muted">
+                        <span id="planCount">0</span> planned sessions
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="plansList"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

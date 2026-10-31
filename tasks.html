@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tasks - StudyMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="app">
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">📚 StudyMate</div>
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+
+            <a href="planner.html">📅 Study Planner</a>
+
+            <a href="tasks.html" class="active">✅ Tasks</a>
+
+            <a href="progress.html">📊 Progress</a>
+
+        </nav>
+
+        <button id="logoutBtn" class="logout">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <div>
+
+                <p class="eyebrow">TASK MANAGER</p>
+
+                <h1>Manage Your Tasks ✅</h1>
+
+                <p class="muted">
+                    Add, complete and organize your academic tasks.
+                </p>
+
+            </div>
+
+        </div>
+
+        <section class="form-card">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm" class="form-grid">
+
+                <div class="form-group">
+
+                    <label>Task Title</label>
+
+                    <input
+                        type="text"
+                        id="taskTitle"
+                        placeholder="e.g. Complete HTML Project"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Subject</label>
+
+                    <input
+                        type="text"
+                        id="taskSubject"
+                        placeholder="e.g. CSE-326"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Deadline</label>
+
+                    <input
+                        type="date"
+                        id="taskDate"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Priority</label>
+
+                    <select id="taskPriority">
+
+                        <option value="High">High</option>
+
+                        <option value="Medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="Low">Low</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Category</label>
+
+                    <select id="taskCategory">
+
+                        <option>Assignment</option>
+
+                        <option>Practical</option>
+
+                        <option>Study</option>
+
+                        <option>Project</option>
+
+                        <option>Exam Preparation</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <button type="submit" class="btn primary">
+                        + Add Task
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="content-card">
+
+            <div class="filters">
+
+                <input
+                    type="search"
+                    id="taskSearch"
+                    placeholder="🔎 Search tasks..."
+                >
+
+                <select id="taskFilter">
+
+                    <option value="all">All Tasks</option>
+
+                    <option value="pending">Pending</option>
+
+                    <option value="completed">Completed</option>
+
+                </select>
+
+                <select id="priorityFilter">
+
+                    <option value="all">All Priorities</option>
+
+                    <option value="High">High</option>
+
+                    <option value="Medium">Medium</option>
+
+                    <option value="Low">Low</option>
+
+                </select>
+
+            </div>
+
+            <div id="tasksTable"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

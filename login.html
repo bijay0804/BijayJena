@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - StudyMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+    <div class="login-left">
+
+        <div class="logo">📚 StudyMate</div>
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+            Organize your studies, manage your tasks
+            and track your progress.
+        </p>
+
+        <div class="login-feature">
+            ✓ Manage study plans
+        </div>
+
+        <div class="login-feature">
+            ✓ Track assignments
+        </div>
+
+        <div class="login-feature">
+            ✓ Monitor your progress
+        </div>
+
+    </div>
+
+    <div class="login-card">
+
+        <h2>Student Login</h2>
+
+        <p class="muted">
+            Enter your details to continue.
+        </p>
+
+        <form id="loginForm">
+
+            <label>Student Name</label>
+
+            <input
+                type="text"
+                id="loginName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label>Student ID</label>
+
+            <input
+                type="text"
+                id="loginId"
+                placeholder="Enter your student ID"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter password"
+                minlength="4"
+                required
+            >
+
+            <button type="submit" class="btn primary full">
+                Login →
+            </button>
+
+        </form>
+
+        <p class="login-note">
+            
+        </p>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

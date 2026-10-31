@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Progress - StudyMate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="app">
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">📚 StudyMate</div>
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+
+            <a href="planner.html">📅 Study Planner</a>
+
+            <a href="tasks.html">✅ Tasks</a>
+
+            <a href="progress.html" class="active">
+                📊 Progress
+            </a>
+
+        </nav>
+
+        <button id="logoutBtn" class="logout">
+            🚪 Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <div>
+
+                <p class="eyebrow">PROGRESS TRACKER</p>
+
+                <h1>Your Study Progress 📊</h1>
+
+                <p class="muted">
+                    See how much of your work has been completed.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="progress-layout">
+
+            <section class="progress-circle-card">
+
+                <div class="circle" id="circleProgress">
+                    <span>0%</span>
+                </div>
+
+                <h2>Overall Completion</h2>
+
+                <p id="progressMessage" class="muted">
+                    Add some tasks to start tracking.
+                </p>
+
+            </section>
+
+            <section class="content-card">
+
+                <h2>Task Summary</h2>
+
+                <div class="summary-grid">
+
+                    <div>
+                        <span>Total Tasks</span>
+                        <strong id="pTotal">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Completed</span>
+                        <strong id="pCompleted">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Pending</span>
+                        <strong id="pPending">0</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="content-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Subject-wise Progress</h2>
+                    <p class="muted">
+                        Progress calculated from completed tasks.
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="subjectProgress"></div>
+
+        </section>
+
+        <section class="tips-card">
+
+            <h2>💡 Study Tips</h2>
+
+            <div class="tips-grid">
+
+                <div>
+                    <strong>1. Set Priorities</strong>
+                    <p>Complete high-priority tasks first.</p>
+                </div>
+
+                <div>
+                    <strong>2. Plan Ahead</strong>
+                    <p>Create study sessions before deadlines.</p>
+                </div>
+
+                <div>
+                    <strong>3. Stay Consistent</strong>
+                    <p>Small daily progress can make a big difference.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
